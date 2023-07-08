@@ -5,3 +5,5 @@ sentence = '''My very photogenic mother died in a freak accident (picnic, lightn
 words ={(word.strip('.,;:-?!()')).lower() for word in sentence.split()}
 
 print(*sorted(words))
+
+#print(*sorted({''.join([c for c in i if c.isalpha()]) for i in sentence.lower().split()}))
